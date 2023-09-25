@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solidos.css">
+    <title>Sólidos</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Viridian </h1>
+        </div>
+        <div class="menu">
+            <a href="pagina_inicial.html">Home</a>
+            <a href="#">Sobre</a>
+            <a id="botao" href="#">Fale conosco</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 style="font-size: 80px;">Teor de Sólidos</h2>
+            <p> o Teor de sólidos é o resíduo que resta na cápsula após a evaporação em Balança Analítica ou Estufa de secagem de uma porção de amostra e sua posterior secagem em estufa a 103°C-105°C até peso constante.</p>
+            
+            <a href="diluicao.html" class="lab">Diluição</a>
+        </div>
+
+        <div class="img-headline">
+            <img src="solido.jpg" width="500px" alt="balança-solidos">
+            <div class="inputbox">
+                            <input type="Number" placeholder="Digite o peso do prato" id="pesoprato">
+                            <input type="Number" placeholder="Digite o peso da resina" id="pesoresina">
+                            <input type="Number" placeholder="Digite o peso final do sólido" id="pesofinal">
+                            <button onclick="calculaSolido()" class="button">Calcular</button>
+                            <p id="respostaSolido"></p>
+            </div>
+                
+        </div>
+        
+    </header>
+
+    <div class="explication-cobb">
+      
+
+
+
+            
+    </div>
+    
+    <footer>
+        <div class="logo-rodape">
+        <h1 class="viridian">Viridian</h1>
+        <p style="color:white">Aplicação de barreira</p>
+    </div>
+    <b style="font-family: Arial, Helvetica, sans-serif;">© VIRIDIAN-COAT INDÚSTRIA E COMÉRCIO</b>
+    </footer>
+   
+    <script src="cobb.js"></script>
+</body>
+</html>

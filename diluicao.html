@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diluicao.css">
+    <title>Diluição</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Viridian </h1>
+        </div>
+        <div class="menu">
+            <a href="pagina_inicial.html">Home</a>
+            <a href="#">Sobre</a>
+            <a id="botao" href="#">Fale conosco</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 style="font-size: 80px;">Diluição e Concentração</h2>
+            <p>Diluição: é a adição de solvente em uma solução, que diminui a concentração do soluto.</p>
+            <p>A concentração comum das soluções indica a quantidade em massa de soluto que se encontra dissolvida em um volume-padrão de solução e normalmente é expressa em g/L.</p>
+            <p></p>
+            
+                    
+            <!-- <a href="#" class="lab">Concentração</a> -->
+        </div>
+
+        <div class="img-headline">
+        <img src="https://kasvi.com.br/wp-content/uploads/2022/12/Preparo-de-solucoes.jpg" width="510">
+        </div>
+       
+    </header>
+    <div class="explication">
+        <h2>Como funciona os cálculos de Diluição e Concentração para a preparação de Resinas?</h2>
+    <p>Como havia explicado brevimente, Diluição é a adição de um solvente (Água) em uma solução, onde diminuimos a Concentração do soluto. No dia a dia, era preciso utilizar algumas fórmulas para diluir a Concentração de uma resina <b>BASE:</b> Resina não diluida , a qual possuia um teor de sólidos entre 44 % a 48 %. </p>
+    <p>Observe o exemplo abaixo: Possuímos uma resina base com um volume e concentração <b>Cr</b>. A pergunta é: quantos litros de água <b>Va</b> é preciso adicionar na solução para adquirir a concentração desejada para a aplicação correta na máquina?</p>
+    <div class="explication-1">
+    <img src="explication-1.jpeg">
+</div>
+    <div class="input-dilui">
+        <input type="number" placeholder="Concentração da Resina base" id="concent-base">
+    <input type="number" placeholder="Volume da Resina base" id="volume-base">
+    <input type="number" placeholder="Concentração Final" id="concent-final">
+    <button onclick="calculaDiluicao()" class="button">Calcular Volume de água acrescentado</button>
+    </div>
+    <p id="respostaDilui"></p>
+<p>Já na concentração, devemos fazer o caso inverso; Quanto de Resina base devemos adicionar em um outro container diluido com um volme <b>Vb</b> e concentração <b>Cb</b> para atingirmos a Concentração ideal?</p>
+<div class="explication-2">
+    <img src="explication-2.jpeg">
+</div>
+<div class="input-dilui">
+    <input type="number" placeholder="Concentração da Resina base" id="concent-A">
+<input type="number" placeholder="Volume da Resina base" id="volume-A">
+<input type="number" placeholder="Concentração da Resina base" id="concent-B">
+<input type="number" placeholder="Volume da Resina base" id="volume-B">
+<input type="number" placeholder="Concentração Final" id="concent-f">
+<button onclick="calculaDiluicaoMistura()" class="button">Calcular Volume de água acrescentado</button>
+</div>
+
+<p id="respostaDiluiMistura"></p>
+    </div>
+
+    <footer>
+        <div class="logo-rodape">
+        <h1 class="viridian">Viridian</h1>
+        <p style="color:white">Aplicação de barreira</p>
+    </div>
+    <b style="font-family: Arial, Helvetica, sans-serif;">© VIRIDIAN-COAT INDÚSTRIA E COMÉRCIO</b>
+    </footer>
+   
+    <script src="cobb.js"></script>
+</body>
+</html>

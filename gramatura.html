@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gramatura.css">
+    <title>Gramatura</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Viridian </h1>
+        </div>
+        <div class="menu">
+            <a href="pagina_inicial.html">Home</a>
+            <a href="#">Sobre</a>
+            <a id="botao" href="#">Fale conosco</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 style="font-size: 80px;">Gramatura</h2>
+            <p>Gramatura É a massa por unidade de área do papel ou cartão, determinada por método padronizado de
+                ensaio.</p>
+            <a href="umidade.html" class="lab">Umidade</a>
+        </div>
+
+        <div class="img-headline">
+            <img src="https://media.istockphoto.com/id/1280849975/es/foto/rollos-de-papel-blanco.jpg?s=612x612&w=0&k=20&c=DQd2FG7SH0NhX7-tYvaOnj-UJUj5UM6wsetKEE-U6dU=" width="500px">
+            <div class="inputbox">
+                <input type="Number" placeholder="Digite o peso em gramas" id="pesoGramatura">
+                <input type="Number" placeholder="Digite a área em metros quadrados" id="area">
+                <button onclick="calculaGramatura()" class="button">Calcular</button>
+                <p id="respostaGramatura"></p>
+    
+            </div>
+                
+        </div>
+        
+    </header>
+
+    <div class="explication-cobb">
+        <h2>o que é gramatura de papel?</h2>
+        <p>Gramatura de papel é o valor da massa pela área de um papel, ou seja, a medida da densidade e peso do papel, expressa em gramas por metro quadrado (g/m2).Para identificar a gramatura de papel, utiliza-se uma balança de precisão, que indica o peso do papel por metro quadrado e dessa forma, classifica-se sua gramatura. </p>
+        <p><b>As especificações foram padronizadas pela norma ISO 536, e quanto maior for a numeração da gramatura, mais grosso será o papel.</b></p>
+        <p>É importante lembrar que, gramatura diferencia-se de espessura. A espessura é a distância entre duas faces de um papel e pode variar de acordo com cada marca, pois depende da compactação das fibras das folhas.</p>
+        <p>Por meio dessas medidas, é possível identificar a qualidade e a densidade do papel, e através desse entendimento, compreender qual o papel será ideal para tornar físico um trabalho virtual.</p> <br>
+        <h2>Quais são as gramaturas de papel existentes os materiais recomendados para cada medida ?</h2>
+        <p> <b>35g a 55g</b> - Essas medidas referem-se a papéis mais finos e geralmente são utilizados para impressão de jornais e bobinas para máquinas de cartão;</p>
+        <p><b>63g</b> - Gramatura ideal para a impressão de blocos de orçamento e notas fiscais;</p>
+        <p><b>75g a 80g</b> - Apostilas, livros, panfletos, papéis timbrados e receituários podem ser impressos com essa faixa de gramatura;</p>
+        <p><b>90g a 115g </b> - Um pouco mais grossa em relação as anteriores, essa gramatura refere-se às populares folhas A4, comumente utilizadas em escritórios e escolas, pois possuem um baixo custo de impressão. Gramatura ideal para cartazes, panfletos e folhetos.</p>
+        <p><b>120g</b> - A gramatura 120g é ideal para impressão de sketchbook, livros coloridos, catálogos de produtos.</p>
+        <p><b>150g </b> – Normalmente é escolhida para impressão de flyers, folders e capas de revista que buscam maior qualidade e resistência.</p>
+        <p>180g<b></b> – Essa gramatura é adotada na impressão cartazes, anúncios.</p>
+        <p><b>210 a 300g</b> – Normalmente, essa faixa de gramaturas é utilizada para a impressão de materiais que demandam maior qualidade, resistência e durabilidade, como convites, cartões de visita, capas de livro, calendários e outros que exijam uma bela apresentação.</p>
+        <p><b>Acima de 300g</b> - A produção de materiais com gramatura acima de 300g é mais raro, mas são indicados para pintura aquarela.</p>
+        <p>Esses são os materiais mais comuns para cada tipo de gramatura, porém não existe uma regra para a escolha da gramatura de papel, pois dependerá da necessidade e escolha pessoal de cada um durante um processo criativo.</p>
+        <p>Entretanto, é válido ressaltar que a gramatura está diretamente ligada ao resultado final da peça, por isso é imprescindível que a escolha do papel seja feita com cuidado, além de sempre optar por uma gráfica de qualidade e confiança.</p>
+        
+    </div>
+    
+    <footer>
+        <div class="logo-rodape">
+        <h1 class="viridian">Viridian</h1>
+        <p style="color:white">Aplicação de barreira</p>
+    </div>
+    <b style="font-family: Arial, Helvetica, sans-serif;">© VIRIDIAN-COAT INDÚSTRIA E COMÉRCIO</b>
+    </footer>
+   
+    <script src="cobb.js"></script>
+</body>
+</html>

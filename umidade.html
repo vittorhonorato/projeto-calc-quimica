@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="umidade.css">
+    <title>Umidade</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Viridian </h1>
+        </div>
+        <div class="menu">
+            <a href="pagina_inicial.html">Home</a>
+            <a href="#">Sobre</a>
+            <a id="botao" href="#">Fale conosco</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 style="font-size: 80px;">Umidade</h2>
+            <p>Umidade é o percentual de água contida no material ou produto.</p>
+            <p>Unidade de medida: <b>%</b></p>
+            <a href="abs_lateral.html" class="lab">Absorção lateral</a>
+        </div>
+
+        <div class="img-headline">
+            <img src="umidade-papel.jpg" width="500">
+            <div class="inputbox">
+                <input type="Number" placeholder="Digite o peso em inicial" id="box1">
+                <input type="Number" placeholder="Digite o peso final" id="box2">
+                <button onclick="calculaUmidade()" class="button">Calcular</button>
+                <p id="umidade"></p>
+    
+            </div>
+                
+        </div>
+        
+    </header>
+
+    <div class="explication-umidade">
+        <h2>Umidade no papel</h2>
+        <p>A umidade no papelão ondulado é expressa,
+            percentualmente, como teor de umidade. A
+            “quantidade” de água existente em um corpo de prova é eliminada com o auxílio de uma estufa. As massas do corpo de prova, antes e depois
+            de submetê-lo à estufa, são determinadas. <br><br><b>Calcula-se
+            o percentual de umidade contido no corpo de prova
+            conforme abaixo:</b></p>
+            <pre><b>(Mi – Mf) . 100 / Mi <br>Mi = massa inicial<br>Mf = massa final<br>Mi – Mf é o conteúdo de umidade (água)
+existente no corpo de prova.</b></pre>
+        <p>O conteúdo de umidade tem grande influência e
+            pode determinar uma redução na resistência do papelão ondulado. Os ensaios para determinar as diferentes
+            propriedades do material são efetuados em condições
+            normalizadas (umidade relativa de 50% +/- 2% e temperatura de 23°C +/- 1°C). Nessas condições, o papelão
+            ondulado estabiliza-se com um teor de umidade da ordem de 7,5%.</p>
+        <p>Os usuários, na maioria das situações, executam os ensaios na hora do recebimento, nas condições ambientes.
+            Se a Umidade Relativa (UR), nesse momento, estiver acima de 50%, os resultados dos ensaios podem apresentar
+            valores abaixo da especificação. Por exemplo, se o teor de
+            umidade estiver em 8%, haverá uma perda na resistência
+            à compressão da caixa da ordem de 4% a 6%.</p>
+        <p>Aqueles usuários de embalagens de papelão ondulado que conhecem o problema, mas não podem executar os ensaios em condições normalizadas, já utilizam
+            os serviços do laboratório da ABPO, onde as amostras
+            permanecerão por um tempo mínimo de 24 horas para
+            entrarem em equilíbrio com as condições padronizadas
+            (que obedecem à Norma NBR NM-ISO 187).</p>
+        <p>O teor de umidade, porém, pode ser determinado
+            se o usuário tiver uma estufa para “secar” o papelão ondulado. Uma hora em estufa a 105°C já deve
+            eliminar a água contida no corpo de prova. A pesagem deve ser feita numa balança com exatidão
+            de 0,05% da massa a ser pesada. Verificando um
+            teor de umidade maior que 7,5%, o usuário já pode
+            deduzir que um resultado menor nos testes de recebimento pode estar sendo influenciado pelo maior
+            teor de umidade contido na amostra.</p>
+        <p>Os projetistas das embalagens de papelão ondulado procuram conhecer a UR à qual a embalagem será submetida durante seu uso normal. Isso,
+            entretanto, só é possível para aquelas embalagens
+            que serão armazenadas em câmaras frigoríficas (embalagens para frutas, por exemplo). Para a maioria
+            das situações, porém, a questão está ligada à região ou à estação do ano. Talvez o ideal fosse considerar, nos cálculos de resistência da embalagem,
+            uma condição de UR maior. Já houve uma sugestão para se considerar uma UR da ordem de 65%,
+            que atenderia melhor às condições de nosso país.
+            Trata-se de uma consideração interessante. </p>
+    </div>
+    
+    <footer>
+        <div class="logo-rodape">
+        <h1 class="viridian">Viridian</h1>
+        <p style="color:white">Aplicação de barreira</p>
+    </div>
+    <b style="font-family: Arial, Helvetica, sans-serif;">© VIRIDIAN-COAT INDÚSTRIA E COMÉRCIO</b>
+    </footer>
+   
+    <script src="cobb.js"></script>
+</body>
+</html>

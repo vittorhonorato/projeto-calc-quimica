@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cobb.css">
+    <title>Cobb</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Viridian </h1>
+        </div>
+        <div class="menu">
+            <a href="pagina_inicial.html">Home</a>
+            <a href="#">Sobre</a>
+            <a id="botao" href="#">Fale conosco</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="headline">
+            <h2 style="font-size: 80px;">Cobb</h2>
+            <p>O ensaio de COBB é internacionalmente usado para a determinação da quantidade de água absorvida pela superfície de papéis, cartão e papelão ondulado, de características não absorventes.
+            <p>A determinação da absorção de água é importante na especificação de produtos para uso em embalagens e indústrias gráficas. Sistema de fixação da amostra por molas de pressão, facilita a correta utilização do equipamento e otimiza a operação, assegurando alta repetibilidade e confiabilidade aos ensaios</p>
+            <a href="viscosidade.html" class="lab">Viscosidade</a>
+        </div>
+
+        <div class="img-headline">
+            <img src="https://assets.prestogroup.com/uploads/product_images/image1/1728215342.cobb%20sizing%20l%20600.png" width="500px">
+            <div class="inputbox">
+                <input type="Number" placeholder="Digite o peso inicial" id="peso1">
+                <input type="Number" placeholder="Digite o peso final" id="peso2">
+                <button onclick="calculaCobb()" class="button">Calcular</button>
+                <p id="respostaCobb"></p>
+    
+            </div>
+                
+            
+            <!-- <img src="img.png" max-widht="100px"  width="510px" > -->
+        </div>
+        
+    </header>
+
+    <div class="explication-cobb">
+        <h2>Cobb</h2>
+        <p>absorção elevada é importante para produtos tais como papéis sanitário e toalha. no entanto, as fibras de celulose ao absorverem água, tornam-se inchadas, mais flexíveis, e tem a maior parte de suas propriedades físicas e mecânicas alteradas.</p>
+        <p>Quando a resistência de tais materiais é necessária, como para a maioria das aplicações de embalagem, são necessários tratamentos para minimizar tais absorções. As polpas são tratadas com agentes adesivos que reduzem esta interação com água, tornando a estrutura mais hidrofóbica. Agentes de colagem previvem o espalhamento e a penetração de líquidos e podem ser adicionados na preparação da massa ou através de aplicação nas superfícies já formadas. O conhecimento do grau de resistência destes materiais em relação a água é de grande importância para as diferentes finalidades de utilização, em especial para materiais de embalagem.</p>
+        <p>O método de Cobb, descrito na norma ISO 535, é o mais amplamente utilizado por fabricantes e usários de embalagens para medir a interação de cartões e papelões em contato com água.</p>
+        <br><br>
+        <div class="img-cobb">
+            <img src="cobb-test.jpg" class= "cobb"alt="cobb-tester">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="logo-rodape">
+        <h1 class="viridian">Viridian</h1>
+        <p style="color:white">Aplicação de barreira</p>
+    </div>
+    <b style="font-family: Arial, Helvetica, sans-serif;">© VIRIDIAN-COAT INDÚSTRIA E COMÉRCIO</b>
+    </footer>
+   
+    <script src="cobb.js"></script>
+</body>
+</html>
